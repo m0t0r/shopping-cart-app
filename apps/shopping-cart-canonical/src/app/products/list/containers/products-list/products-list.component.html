@@ -1,3 +1,18 @@
 <div class="products-list">
+  <mat-tab-group
+    color="accent"
+    backgroundColor="primary"
+    [selectedIndex]="selectedTab"
+    (selectedTabChange)="onTabChange($event)"
+  >
+    <mat-tab
+      *ngFor="let category of categories"
+      [routerLink]="category.path"
+      [label]="category.label">
 
+      <sc-main-product [product]="product"></sc-main-product>
+    </mat-tab>
+  </mat-tab-group>
 </div>
+
+

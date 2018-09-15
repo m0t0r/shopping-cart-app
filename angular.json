@@ -7,7 +7,7 @@
       "root": "apps/shopping-cart-canonical/",
       "sourceRoot": "apps/shopping-cart-canonical/src",
       "projectType": "application",
-      "prefix": "shopping-cart-workspace",
+      "prefix": "sc",
       "schematics": {},
       "architect": {
         "build": {

@@ -1,0 +1,27 @@
+<div class="main-product">
+  <div class="product-image">
+    {{ product?.image }}
+  </div>
+  <div class="product-info">
+    <h1>{{ product?.headline }}</h1>
+    <p class="product-description">{{ product?.description }}</p>
+
+    <div class="info-block">
+      <div class="price">
+        <span class="price-value">
+          {{ product?.price | currency }}
+        </span>
+      </div>
+      <div class="comment">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+        <div class="user">
+          <div class="avatar">
+            <mat-icon>person</mat-icon>
+          </div>
+          <div class="username">John Doe</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
